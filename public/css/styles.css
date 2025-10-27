@@ -1,0 +1,10 @@
+:root { --valid: #2d8a6b; --invalid: #c0392b; --muted: #666; }
+body { font-family: Arial, sans-serif; padding: 2rem; }
+.container { max-width: 420px; margin: 0 auto; }
+label { display:block; margin-bottom:1rem; }
+input { width:100%; padding:.5rem; margin-top:.25rem; box-sizing:border-box; }
+input.valid { border:2px solid var(--valid); }
+input.invalid { border:2px solid var(--invalid); }
+small.error { color:var(--invalid); display:block; height:1rem; margin-top:.25rem; font-size:0.9rem; }
+.hidden { display:none; }
+button { padding:.6rem 1rem; margin-top:.5rem; }

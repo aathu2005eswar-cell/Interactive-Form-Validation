@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interactive Form Validation</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Register</h1>
+    <form id="regForm" novalidate>
+      <label>
+        Name
+        <input id="name" name="name" type="text" required />
+        <small class="error"></small>
+      </label>
+
+      <label>
+        Email
+        <input id="email" name="email" type="email" required />
+        <small class="error"></small>
+      </label>
+
+      <label>
+        Phone
+        <input id="phone" name="phone" type="text" required />
+        <small class="error"></small>
+      </label>
+
+      <label>
+        Password
+        <input id="password" name="password" type="password" required />
+        <small class="error"></small>
+      </label>
+
+      <label>
+        Confirm Password
+        <input id="confirmPassword" name="confirmPassword" type="password" required />
+        <small class="error"></small>
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="success" class="hidden"></div>
+  </main>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
